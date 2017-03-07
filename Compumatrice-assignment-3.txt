@@ -1,0 +1,7 @@
+SELECT DeptName AS 'Department Name',   
+COUNT(*) AS 'No of Employees'   
+FROM Department  
+INNER JOIN Employee  
+ON Employee.DeptNo= Department.DeptNo  
+GROUP BY Department.DeptNo, DeptName   
+ORDER BY DeptName; 
